@@ -1,31 +1,33 @@
 import random
 import string
 import winsound
-import pprint
 
 def beep():
     winsound.Beep(1000,100)
     
-def intpass():
-    intsize=int(input("Enter the size of the password : "))
-    ranum=[random.randint(0,9) for i in range(intsize)]
-    ranum="".join([str(ranum[i]) for i in range(len(ranum))])
-    beep()
-    print(f"the random Password consesting of {intsize} digits is {ranum}")
-intpass()
+info="""Enter the type of the password: 
+    1 : Numbers
+    2 : Letters
+    3 : Mix 'Letters & Numbers'"""
 
-def mixpass():
-    intsize=int(input("Enter the size of the password : "))
-    ramix=[random.choice(string.ascii_uppercase+ string.digits) for i in range(intsize)]
-    ramix="".join([ramix[i] for i in range(len(ramix))])
-    beep()
-    pprint.pprint(f"the random Password consisting of {intsize} fields is : {ramix} ")
-mixpass()
+def majpass():
+    print(info)
+    passtype=int(input())
+    passize=int(input("Enter the size of the password : "))
+    if passtype==1:
+        rapass=[str(random.randint(0,9)) for i in range(passize)]
+        #or string.digits
+        # make an option to choose upper, lower, or both!
+    elif passtype==2:
+         rapass=[random.choice(string.ascii_letters) for i in range(passize)]
 
-def strpass():
-    passize=int(input("enter the size of the password: "))
-    pastring=[random.choice(string.ascii_uppercase) for i in range(passize)]
-    pastring="".join(pastring)
+    elif passtype==3:
+        rapass=[random.choice(string.ascii_uppercase+ string.digits) for i in range(passize)]
+
+    else:
+        print(f"please enter a valid number from the list below! you entered: '{passtype}'")
+        majpass()
+    rapass="".join(rapass)
     beep()
-    print(f"the password you requested containing only letters with the size of {passize} is: {pastring}")
-strpass()
+    print(rapass)
+majpass()
