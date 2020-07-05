@@ -1,0 +1,84 @@
+create table tele                                                                                                                    
+(
+counter int  ,
+brand varchar(255),
+country varchar (255),
+model varchar (255),
+primary key(counter)
+);
+commit;
+create table students( counter int, name varchar(255), nationality varchar(255),mark decimal(10,2),birthday date);
+insert into students (counter,)(select nationality from customer   )  ;
+select brand from tele (select dayofmonth(birthday ) from students;
+create view inter as select nationality from customer  intersect
+select country from tele;
+create view ord as  select v.*, t.* from (select v.*, row_number() over(order by nationality) as seqnum1 from inter v)v  join (select t.*, row_number() over(order by counter) as seqnum from tele t)t on t.seqnum=v.seqnum1;
+
+create or replace function second as  v_first_name VARCHAR2(100); v_nation  VARCHAR2(100); BEGIN SELECT name, nationality INTO v_first_name, v_nation FROM customer WHERE counter =50;
+DBMS_OUTPUT.PUT_LINE ('Student name: '||v_first_name||' '|| v_nation); EXCEPTION WHEN NO_DATA_FOUND THEN DBMS_OUTPUT.PUT_LINE ('There is no student with '|| 'student id 3'); END;
+
+
+
+select * from customer;
+select to_char (sysdate,'j @ q hh24'),current_date,systimestamp from dual;
+
+select to_char( tele.counter ),to_char(customer.counter) yy from tele,customer;
+select round(mark,2)as second, round(mark,1)as first from students;
+
+update students set nationality=(select  nationality from customer where customer.counter=students.counter);
+update students  set mark =88.22, birthday=date  '1885-12-15' where counter=4  ;
+update students set counter=8 where name='abo kaka';
+select DISTINCT country from tele;
+
+create view shittt as (select customer.counter as ccre from tele right outer join customer on customer.counter=tele.counter where tele.country = customer.nationality) union( select counter from tele)order by ccre ;
+SELECT TO_CHAR (SYSDATE,'MM-DD-YYYY HH12:MI:SS') "NOW" FROM DUAL;
+select * from shittt;
+insert into shittt values (9);
+select * from customer; where exists (select counter from customer where counter=22 );
+select * from customer where  length(buying)=3;
+select * from customer where buying like'%6%';
+select * from customer where counter=(select max(counter) from customer having avg(counter) =11); 
+select * from tele t full join customer c on t.counter=c.counter where c.nationality in( t.country ,'finland');
+select nationality,count(nationality) from customer where name like '%x%' group by nationality having count (nationality)=3;
+insert into tele values(17.5,'oneplus','china','op 7t');
+select count(brand) from tele ;
+update tele set country='china' where counter = 4;
+create sequence rou start with 1 increment by 1 ;
+select  'time='|| to_char(sysdate , 'mm-dd-yyyy hh,ss,mi')"now" from dual;
+select user from dual;
+select 5*7  from dual;
+select rou.nextval from dual;
+/*select* from (select  * from tele order by counter desc) where rownum<=3;                                                                  --max 3 counter values
+tem
+update tele set model = case  when brand= 'samsung' then 's 11'  when brand ='huawei' then 'fold prime' else model  end;           -- update multi values for one column. 
+
+drop table sm;                                                                                                                      --delete table
+drop sequence my_;                                                                                                                  -- delete sequence                                
+create SEQUENCE my_ START WITH 2 INCREMENT BY 1;                                                                                     -- create sequence
+
+ALTER TABLE smartphone rename column model to moodel;
+update smartphone set  counter= bran.nextval;
+where country != 'china' and mobid is null ;
+
+select min(model)as mm ,sum(mobid)/2 from smartphone;
+
+alter table smartphone
+add counter int;
+alter table smartphone 
+modify counter primary key;
+update smartphone
+set counter=bran.nextval ;
+
+alter table smartphone
+rename column country to "balad";
+
+select * from tabtab;
+alter view tabtab
+add ddd int;
+
+--create view newtab as
+
+SELECT * FROM (SMARTPHONE a full join sm b on a.counter=b.counter
+
+order by a.mobid) where rownum<=3;
+insert into smartphone (counter) select counter from sm ;*/
