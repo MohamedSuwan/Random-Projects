@@ -7,7 +7,7 @@ x=input()
 if x=="l":
     print("c'mon its easy")
 elif x=="p":
-    ran=random.randint(1,10)
+    ran=random.randint(1,333)
 
     for g in range (6):
         print(str(6-g)+" guesses left!")
@@ -21,7 +21,7 @@ elif x=="p":
     if ran==myg:
         print("thats correct the number was "+str(ran)+" and you got it with only "+str(g+1)+" guesses!")
     else:
-        print("sorry, you lost! you focken LOSER the number was: " +str(ran))
+        print("sorry, you lost! the number was: " +str(ran))
 else:
     print(':(')
 
