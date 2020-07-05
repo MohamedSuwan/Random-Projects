@@ -1,6 +1,9 @@
 import random
 import string
 import winsound
+import pyperclip
+import shutil
+import os
 
 def beep():
     winsound.Beep(1000,100)
@@ -28,6 +31,9 @@ def majpass():
         print(f"please enter a valid number from the list below! you entered: '{passtype}'")
         majpass()
     rapass="".join(rapass)
+    pyperclip.copy(rapass)
+    open("pass.txt","w+").write(rapass)
+    shutil.copy("pass.txt", os.path.join(os.environ["HOMEPATH"], "Desktop"))
     beep()
     print(rapass)
 majpass()
