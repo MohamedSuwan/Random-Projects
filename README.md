@@ -4,8 +4,8 @@
 * [Hangman](#hangman)
 * [Password Generator](#password_generator)
 * [Start the Music](#start_the_music)
-* [Piano](#p)
-* [sort the list](#so)
+* [Piano](#piano)
+* [sort the list](#sort_list)
 
 ## Guess the Number
 This project gives a specific number of attempts to find a random number in a given range, the program tells the user to guess higher or lower based on his input.
