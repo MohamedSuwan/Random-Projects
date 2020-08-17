@@ -1,0 +1,9 @@
+l1=[1,2,3,4,5,6,7,8,9,10,9,8,7,6,5,4,3,2,1]
+l2=["a","b","c","d","e","f","e","d","c","b","a",]
+l3=[1,"a",2,"b",9,"z",8,"y","Y","1"]
+
+def sort_is():
+    intt=sorted([(i) for i in (l3+l1) if isinstance(i, int)])
+    strr=sorted([(s) for s in (l3+l1) if isinstance(s, str)],key=str.lower)
+    print((intt+strr))
+sort_is()
