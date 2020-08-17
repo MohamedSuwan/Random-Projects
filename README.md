@@ -1,6 +1,6 @@
 # Projects
 ## Table of contents
-* [Guess the Number](#guess-the)
+* [Guess the Number](#guess-the-number)
 * [Hangman](#hangman)
 * [Password Generator](#password-generator)
 * [Start the Music](#start-the-music)
