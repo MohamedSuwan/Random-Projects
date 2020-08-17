@@ -1,23 +1,23 @@
 # Projects
 ## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+* [Guess the Number](#general-info)
+* [Hangman](#technologies)
+* [Password Generator](#setup)
+* [Start the Music](#general-info)
+* [Piano](#technologies)
+* [sort the list](#setup)
 
-## General info
+## Guess the Number
 This project is simple Lorem ipsum dolor generator.
 	
-## Technologies
+## Hangman
 Project is created with:
 * Lorem version: 12.3
 * Ipsum version: 2.33
 * Ament library version: 999
 	
-## Setup
+## Password Generator
 To run this project, install it locally using npm:
-
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
+## Start the Music
+## Piano
+## sort the list
