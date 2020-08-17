@@ -1,11 +1,11 @@
 # Projects
 ## Table of contents
-* [Guess the Number]()
-* [Hangman]()
-* [Password Generator]()
-* [Start the Music]()
-* [Piano]()
-* [sort the list]()
+* [Guess the Number](#g)
+* [Hangman](#h)
+* [Password Generator](#p)
+* [Start the Music](#s)
+* [Piano](#p)
+* [sort the list](#so)
 
 ## Guess the Number
 This project gives a specific number of attempts to find a random number in a given range, the program tells the user to guess higher or lower based on his input.
