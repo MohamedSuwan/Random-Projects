@@ -1,9 +1,9 @@
 # Projects
 ## Table of contents
-* [Guess the Number](#g)
-* [Hangman](#h)
-* [Password Generator](#p)
-* [Start the Music](#s)
+* [Guess the Number](#guess_the_number)
+* [Hangman](#hangman)
+* [Password Generator](#password_generator)
+* [Start the Music](#start_the_music)
 * [Piano](#p)
 * [sort the list](#so)
 
