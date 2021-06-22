@@ -3,7 +3,7 @@
 * [Guess the Number](#guess-the-number)
 * [Hangman](#hangman)
 * [Password Generator](#password-generator)
-* [weather web scraping](#weather_web_scraping)
+* [weather data web scraping](#weather_data_web_scraping)
 * [Start the Music](#start-the-music)
 * [Piano](#piano)
 * [sort the list](#sort-the-list)
