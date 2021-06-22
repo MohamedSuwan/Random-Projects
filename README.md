@@ -20,7 +20,7 @@ Generates, copies and saves the password into a file on the disktop.
 It gives the user the option to choose only numbers, only letters or a mix of letters and numbers and the size of the password.
 
 ## Weather Data Web Scraping
-A web scraping program that collects the historical hourly weather including temperature, wind direction & speed, air pressure and visibility for a givin year, lists all the data in a format of raws and each raw has a unique date and hour.
+A web scraping program that collects the historical hourly weather including temperature, wind direction & speed, air pressure and visibility for a givin year, stores all the data in a format of raws and each raw has a unique date and hour in a text file named the givin year that has been scraped.
 
 ## Start the Music
 ## Piano
