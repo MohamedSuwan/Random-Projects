@@ -3,6 +3,7 @@
 * [Guess the Number](#guess-the-number)
 * [Hangman](#hangman)
 * [Password Generator](#password-generator)
+* [weather web scraping](#weather_web_scraping)
 * [Start the Music](#start-the-music)
 * [Piano](#piano)
 * [sort the list](#sort-the-list)
@@ -17,6 +18,9 @@ The game ends with either a full word guess or running out of attempts.
 ## Password Generator
 Generates, copies and saves the password into a file on the disktop.
 It gives the user the option to choose only numbers, only letters or a mix of letters and numbers and the size of the password.
+
+## Weather Data Web Scraping
+A web scraping program that collects the historical hourly weather including temperature, wind direction & speed, air pressure and visibility for a givin year, lists all the data in a format of raws and each raw has a unique date and hour.
 
 ## Start the Music
 ## Piano
